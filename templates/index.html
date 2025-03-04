@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to PDF Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 700px;
+            height: 200px;
+            padding: 20px;
+            box-shadow: 10px 10px 5px lightblue;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        header{
+            background: linear-gradient(to right, #2b1842, #904fdd);
+            border-radius: 3px;
+            margin-bottom: 0;
+            font-size: 2.0rem;
+            font-weight: 700;
+            line-height: 1.1;
+            color: #ffffff;
+            text-decoration: none;
+            border: none;
+            padding: 1rem 1.5rem;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <header >Atomic PDF Converter</header>
+    <div class="container">
+        <h1 align="center" >Image to PDF Converter</h1>
+        <form action="/convert" method="post" enctype="multipart/form-data" align="center">
+            <input type="file" name="files" multiple accept="image/*">
+            <br>
+            <button type="submit">Convert to PDF</button>
+        </form>
+    </div>
+</body>
+</html>
